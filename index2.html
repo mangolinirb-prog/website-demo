@@ -39,31 +39,6 @@
 			</label>
 			<br><br>
 
-			<label>Email:<br>
-				<input type="email" name="email" required>
-			</label>
-			<br><br>
-
-			<label>Prawo jazdy:<br>
-				<select name="prawo_jazdy">
-					<option value="nie">Nie</option>
-					<option value="tak">Tak</option>
-				</select>
-			</label>
-			<br><br>
-
-			<label>Płeć:<br>
-				<label><input type="radio" name="plec" value="kobieta"> Kobieta</label>
-				<label><input type="radio" name="plec" value="mezczyzna"> Mężczyzna</label>
-				<label><input type="radio" name="plec" value="inne"> Inne</label>
-			</label>
-			<br><br>
-
-			<label>Numer telefonu:<br>
-				<input type="tel" name="telefon" pattern="[0-9+\- ]{6,20}" placeholder="+48 123 456 789">
-			</label>
-			<br><br>
-
 			<label>Województwo:<br>
 				<select name="wojewodztwo">
 					<option value="dolnoslaskie">Dolnośląskie</option>
@@ -86,6 +61,34 @@
 			</label>
 			<br><br>
 
+			<label>Email:<br>
+				<input type="email" name="email" required>
+			</label>
+			<br><br>
+
+			<label>Prawo jazdy:<br>
+				<select name="prawo_jazdy">
+					<option value="nie">tak</option>
+					<option value="tak">nie</option>
+				</select>
+			</label>
+			<br><br>
+
+			<label>Płeć:<br>
+				<label><input type="radio" name="plec" value="kobieta"> Kobieta</label>
+				<label><input type="radio" name="plec" value="mezczyzna"> Mężczyzna</label>
+				<label><input type="radio" name="plec" value="inne"> Inne</label>
+			</label>
+			<br><br>
+
+			<label>Numer telefonu:<br>
+				<!-- wymóg do nr telefonu !!-->
+				<input type="tel" name="telefon" pattern="[0-9+\- ]{9, 15}" placeholder="+48 123 456 789">
+			</label>
+			<br><br>
+
+			
+
 			<label>Uwagi:<br>
 				<textarea name="uwagi" rows="4" cols="40"></textarea>
 			</label>
@@ -98,4 +101,5 @@
 		
 	</body>
 </html>
+
 
