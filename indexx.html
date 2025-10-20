@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Strona główna</title>
+	</head>
+	<body>
+		<h1>Wybierz stronę</h1>
+		<button id="btn1">Kolumny</button>
+		<button id="btn2">Galeria ogórków</button>
+		<button id="btn3">Formularz</button>
+
+		<script>
+			document.getElementById('btn1').addEventListener('click', function(){
+				// open two pages in new tabs
+				window.open('index.html', '_blank');
+				
+			});
+
+			document.getElementById('btn2').addEventListener('click', function(){
+				window.open('index1.html', '_blank');
+			});
+
+			document.getElementById('btn3').addEventListener('click', function(){
+				window.open('index2.html', '_blank');
+			});
+		</script>
+	</body>
+</html>
